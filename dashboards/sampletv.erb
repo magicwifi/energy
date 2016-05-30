@@ -1,0 +1,65 @@
+<script type='text/javascript'>
+$(function() {
+  Dashing.widget_base_dimensions = [370, 340]
+  Dashing.numColumns = 5
+});
+
+</script>
+
+
+
+<% content_for :title do %>节能控制面板<% end %>
+
+<div class="gridster">
+  <ul>
+    <li data-row="1" data-col="1" data-sizex="2" data-sizey="1">
+      <div data-id="welcome" data-view="Text" data-title="Welcome" data-text="中国电信北京信息科技园区节能控制面板" ></div>
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="2" data-sizey="1">
+      <div data-id="bar_counts" data-view="Bar" data-title="Bar" style="background-color:#4b4b4b"></div>
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-view="Clock"></div>
+      <i class="fa fa-clock-o icon-background"></i>
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="synergy" data-view="Meter" data-moreinfo="" data-title="用能健康度" data-min="0" data-max="100"></div>
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="karma" data-view="Number" data-title="实时电量(wh)" style="background-color:#96bf48;"  ></div>
+      <i class="fa fa-heart icon-background"></i>
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="buzzwords" data-view="List" data-unordered="true" data-title="能耗排名" data-moreinfo="" style="background-color:#4b4b4b"  ></div>
+    </li>
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="Bchart" data-view="Bchart" data-title="Bchart" style="background-color:#4b4b4b"></div>
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="valuation" data-view="Number" data-title="光照强度"  ></div>
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="2" data-sizey="1">
+ <div data-id="iframeId1" data-view="Iframe" data-src="http://110.76.185.87/gaoxin/zhibo.php"></div>
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-view="Flatui" ></div>
+    </li>
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="Nest" data-view="Nest" data-title="Nest" style="background-color:#4b4b4b"></div>
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+ <div data-id="aare" data-view="Aare"></div>
+    </li>
+
+
+  </ul>
+</div>

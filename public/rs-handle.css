@@ -1,0 +1,22 @@
+
+.rs-handle {
+  background: none;
+  border: none;
+  background: none;
+  width: 60px;
+  height: 60px;
+}
+.rs-handle::after {
+  background: #fff;
+  border-radius: 0;
+  border: none;
+  height: 1px;
+  width: 14px;
+  margin: 8px 0 0 3px;
+}
+
+.rs-handle.rs-move {
+  cursor: -webkit-grab;
+  cursor: -moz-grab;
+}
+
