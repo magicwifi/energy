@@ -6,7 +6,7 @@ i=0
 bar_counts = []
 
 SCHEDULER.every '5s' do
-  url = URI.parse('http://110.76.185.87/gaoxin/10h.php')
+  url = URI.parse('http://219.141.189.132/gaoxin/10h.php')
   req = Net::HTTP::Get.new(url.to_s)
   res = Net::HTTP.start(url.host, url.port) {|http|
     http.request(req)

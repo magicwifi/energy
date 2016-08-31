@@ -23,14 +23,14 @@ $(".surround").click(function(e) {
     //$(".surround").addClass("on")
     $(e.currentTarget).removeClass("on")
     var deviceid = $(e.currentTarget).attr('id')
-    var url = "http://110.76.185.87/gaoxin/set.php?set_name=" + deviceid +"&set_value=0"
+    var url = "http://219.141.189.132/gaoxin/set.php?set_name=" + deviceid +"&set_value=0"
     //alert(url)
     $.get(url)
   } else {
     //$(".surround").removeClass("on")
     $(e.currentTarget).addClass("on")
     var deviceid = $(e.currentTarget).attr('id')
-    var url = "http://110.76.185.87/gaoxin/set.php?set_name=" + deviceid +"&set_value=1"
+    var url = "http://219.141.189.132/gaoxin/set.php?set_name=" + deviceid +"&set_value=1"
     $.get(url)
   }
 })

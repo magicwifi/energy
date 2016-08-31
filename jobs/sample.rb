@@ -12,7 +12,7 @@ SCHEDULER.every '5s' do
   last_karma     = current_karma
   current_newcome = rand(30)
   current_karma     = rand(200000)
-  url = URI.parse('http://110.76.185.87/gaoxin/812_guangzhao.php')
+  url = URI.parse('http://219.141.189.132/gaoxin/812_guangzhao.php')
   req = Net::HTTP::Get.new(url.to_s)
   res = Net::HTTP.start(url.host, url.port) {|http|
     http.request(req)
@@ -20,13 +20,13 @@ SCHEDULER.every '5s' do
   parsed  = JSON.parse(res.body)
   current_valuation = parsed["guangzhao"].to_f
 
-  url = URI.parse('http://110.76.185.87/gaoxin/812_gonglv.php')
+  url = URI.parse('http://219.141.189.132/gaoxin/812_gonglv.php')
   req = Net::HTTP::Get.new(url.to_s)
   res = Net::HTTP.start(url.host, url.port) {|http|
     http.request(req)
   }
   parsed  = JSON.parse(res.body)
-  current_karma = (parsed["gonglv"].to_f)*1000
+  current_karma = (parsed["gonglv"].to_f.round(2))*1000
 
   send_event('valuation', { current: current_valuation, last: last_valuation })
   send_event('newcome', { current: current_newcome, last: last_newcome })
